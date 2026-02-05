@@ -1,0 +1,25 @@
+[project]
+name = "ccus_toolbox"
+version = "0.1.0"
+description = "The tools used in CCUS data analytics"
+authors = [
+    {name = "Kov",email = "44253207+kovzhu@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas (>=3.0.0,<4.0.0)",
+    "numpy (>=2.4.2,<3.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "matplotlib (>=3.10.8,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.1.0,<8.0.0)"
+]
